@@ -96,24 +96,24 @@
 
 
 
-  <meta name="description" content="如何将 xsd 文件生成相应的序列化类">
+  <meta name="description" content="开发环境：  VSCode  +  python插件  +  ptvsd   待调试文件  ptvsd 项目说明文档   12import ptvsdptvsd.enable_attach((&apos;127.0.0.1&apos;, 12345))  launch.json 配置文件 1234567891011121314151617181920212223242526272829303132333435363">
 <meta property="og:type" content="article">
-<meta property="og:title" content="xsd to C# code">
-<meta property="og:url" content="http://yoursite.com/2019/01/13/xsd-to-C-code/index.html">
+<meta property="og:title" content="ATLgo">
+<meta property="og:url" content="http://yoursite.com/2019/01/14/python_remote_debug/index.html">
 <meta property="og:site_name" content="ATLgo">
-<meta property="og:description" content="如何将 xsd 文件生成相应的序列化类">
+<meta property="og:description" content="开发环境：  VSCode  +  python插件  +  ptvsd   待调试文件  ptvsd 项目说明文档   12import ptvsdptvsd.enable_attach((&apos;127.0.0.1&apos;, 12345))  launch.json 配置文件 1234567891011121314151617181920212223242526272829303132333435363">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-13T15:57:19.571Z">
+<meta property="og:updated_time" content="2018-09-28T05:46:17.360Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xsd to C# code">
-<meta name="twitter:description" content="如何将 xsd 文件生成相应的序列化类">
+<meta name="twitter:title" content="ATLgo">
+<meta name="twitter:description" content="开发环境：  VSCode  +  python插件  +  ptvsd   待调试文件  ptvsd 项目说明文档   12import ptvsdptvsd.enable_attach((&apos;127.0.0.1&apos;, 12345))  launch.json 配置文件 1234567891011121314151617181920212223242526272829303132333435363">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/13/xsd-to-C-code/">
+  <link rel="canonical" href="http://yoursite.com/2019/01/14/python_remote_debug/">
 
 
 
@@ -123,7 +123,7 @@
   };
 </script>
 
-  <title>xsd to C# code | ATLgo</title>
+  <title> | ATLgo</title>
   
 
 
@@ -288,7 +288,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/13/xsd-to-C-code/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/14/python_remote_debug/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Xie Li">
@@ -305,7 +305,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">xsd to C# code
+          <h1 class="post-title" itemprop="name headline">
 
               
             
@@ -331,12 +331,24 @@
                 
               
 
-              <time title="创建时间：2019-01-13 23:56:07 / 修改时间：23:57:19" itemprop="dateCreated datePublished" datetime="2019-01-13T23:56:07+08:00">2019-01-13</time>
+              <time title="创建时间：2019-01-14 00:08:35" itemprop="dateCreated datePublished" datetime="2019-01-14T00:08:35+08:00">2019-01-14</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-09-28 13:46:17" itemprop="dateModified" datetime="2018-09-28T13:46:17+08:00">2018-09-28</time>
               
             
           </span>
@@ -369,7 +381,22 @@
       
 
       
-        <p>如何将 <code>xsd</code> 文件生成相应的序列化类</p>
+        <ul>
+<li><p>开发环境：</p>
+<blockquote>
+<p><code>VSCode</code>  +  <code>python</code>插件  +  <code>ptvsd</code></p>
+</blockquote>
+</li>
+<li><p>待调试文件</p>
+<blockquote>
+<p><a href="https://github.com/Microsoft/ptvsd/blob/master/README.md" target="_blank" rel="noopener">ptvsd 项目说明文档</a> </p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> ptvsd</span><br><span class="line">ptvsd.enable_attach((<span class="string">'127.0.0.1'</span>, <span class="number">12345</span>))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>launch.json</code> 配置文件</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  // Use IntelliSense to learn about possible attributes.</span><br><span class="line">  // Hover to view descriptions of existing attributes.</span><br><span class="line">  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387</span><br><span class="line">  "version": "0.2.0",</span><br><span class="line">  "configurations": [</span><br><span class="line">  </span><br><span class="line">      &#123;</span><br><span class="line">          <span class="attr">"name"</span>: <span class="string">"Python: Current File (Integrated Terminal)"</span>,</span><br><span class="line">          <span class="attr">"type"</span>: <span class="string">"python"</span>,</span><br><span class="line">          <span class="attr">"request"</span>: <span class="string">"launch"</span>,</span><br><span class="line">          <span class="attr">"program"</span>: <span class="string">"$&#123;file&#125;"</span>,</span><br><span class="line">          <span class="attr">"console"</span>: <span class="string">"integratedTerminal"</span></span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">          <span class="attr">"name"</span>: <span class="string">"Python: Attach"</span>,</span><br><span class="line">          <span class="attr">"type"</span>: <span class="string">"python"</span>,</span><br><span class="line">          <span class="attr">"request"</span>: <span class="string">"attach"</span>,</span><br><span class="line">          <span class="attr">"port"</span>: <span class="number">5678</span>,</span><br><span class="line">          <span class="attr">"host"</span>: <span class="string">"localhost"</span></span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">          <span class="attr">"name"</span>: <span class="string">"Attach (Remote Debug)"</span>,</span><br><span class="line">          <span class="attr">"type"</span>: <span class="string">"python"</span>,</span><br><span class="line">          <span class="attr">"request"</span>: <span class="string">"attach"</span>,</span><br><span class="line">          <span class="attr">"port"</span>: <span class="number">12345</span>,</span><br><span class="line">          <span class="attr">"host"</span>: <span class="string">"localhost"</span>,</span><br><span class="line">          <span class="attr">"pathMappings"</span>: [</span><br><span class="line">              &#123;</span><br><span class="line">                  <span class="attr">"localRoot"</span>: <span class="string">"$&#123;workspaceFolder&#125;"</span>,</span><br><span class="line">                  <span class="attr">"remoteRoot"</span>: <span class="string">"C:\\Users\\ATLgo\\AppData\\Roaming\\QGIS\\QGIS3\\profiles\\default\\python\\plugins\\PublishToGeoServer"</span></span><br><span class="line">              &#125;</span><br><span class="line">          ],</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">          <span class="attr">"name"</span>: <span class="string">"Python: Current File (External Terminal)"</span>,</span><br><span class="line">          <span class="attr">"type"</span>: <span class="string">"python"</span>,</span><br><span class="line">          <span class="attr">"request"</span>: <span class="string">"launch"</span>,</span><br><span class="line">          <span class="attr">"program"</span>: <span class="string">"$&#123;file&#125;"</span>,</span><br><span class="line">          <span class="attr">"console"</span>: <span class="string">"externalTerminal"</span></span><br><span class="line">      &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 
       
     </div>
@@ -400,13 +427,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/01/13/xsd-to-C-code/" rel="next" title="xsd to C# code">
+                <i class="fa fa-chevron-left"></i> xsd to C# code
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/14/python_remote_debug/" rel="prev" title="">
+              <a href="/2019/01/14/QGIS编译/" rel="prev" title="">
                  <i class="fa fa-chevron-right"></i>
               </a>
             
